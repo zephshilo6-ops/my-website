@@ -1,57 +1,83 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Zephania John Shilole Ministries</title>
     <meta charset="UTF-8">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; background-color: #f5f5f5; }
-        header { text-align: center; padding: 20px; background-color: #4CAF50; color: white; border-radius: 10px; }
-        h1, h2, h3 { margin: 10px 0; }
-        section { background-color: white; padding: 15px; margin: 20px 0; border-radius: 10px; }
-        a { color: #4CAF50; text-decoration: none; }
+        body { font-family: Arial, sans-serif; margin:0; background-color: #f0f0f0; }
+        header { background-color: #4CAF50; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #333; }
+        nav a { color: white; padding: 14px 20px; display: inline-block; text-decoration: none; }
+        nav a:hover { background-color: #4CAF50; }
+        section { background-color: white; margin: 20px auto; padding: 20px; border-radius: 10px; max-width: 900px; }
+        h2 { color: #4CAF50; margin-bottom: 10px; }
+        img.profile { width: 150px; border-radius: 50%; display: block; margin: 0 auto; }
+        .sermon-link { display: block; margin-bottom: 5px; }
+        button { background-color: #4CAF50; color: white; border: none; padding: 10px 20px; margin:5px 0; border-radius:5px; cursor:pointer; }
+        button:hover { background-color: #45a049; }
     </style>
 </head>
-
 <body>
+
 <header>
     <h1>Zephania John Shilole Ministries</h1>
-    <h2>Preaching Christ. Preparing a People.</h2>
+    <h3>Preaching Christ. Preparing a People.</h3>
 </header>
 
-<section>
-    <h3>About Me</h3>
-    <p>I am Pastor Zephania John Shilole, called to preach righteousness and prepare people for the Second Coming of Jesus. I am also a future Medical Doctor, seeking to serve both spiritually and physically.</p>
+<nav>
+    <a href="#about">About</a>
+    <a href="#printed">Printed Sermons</a>
+    <a href="#audio">Audio Sermons</a>
+    <a href="#video">Video Sermons</a>
+    <a href="#devotion">Short Devotion</a>
+    <a href="#thoughts">Theological Thoughts</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img class="profile" src="https://example.com/your-photo.jpg" alt="Zephania John Shilole">
+    <p>I am Pastor Zephania John Shilole, called to preach righteousness and prepare people for the Second Coming of Jesus. I am also a future Medical Doctor, serving both spiritually and physically.</p>
 </section>
 
-<section>
-    <h3>Latest Sermon (Text)</h3>
-    <p><strong>Title:</strong> Where Did It Fall?</p>
-    <p><strong>Text:</strong> 2 Kings 6:1–7</p>
-    <p><strong>Theme:</strong> Recovering Lost Power</p>
+<section id="printed">
+    <h2>Printed Sermons</h2>
+    <a class="sermon-link" href="https://example.com/sermon1.pdf" target="_blank"><button>Sermon 1 – Where Did It Fall?</button></a>
+    <a class="sermon-link" href="https://example.com/sermon2.pdf" target="_blank"><button>Sermon 2 – Spiritual Revival</button></a>
 </section>
 
-<section>
-    <h3>Audio Sermons</h3>
-    <p>Listen to latest sermon:</p>
-    <!-- Replace the URL below with your actual audio link -->
+<section id="audio">
+    <h2>Audio Sermons</h2>
+    <p>Listen to latest sermons:</p>
     <audio controls>
-        <source src="https://example.com/your-sermon.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+        <source src="https://example.com/sermon1.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="https://example.com/sermon2.mp3" type="audio/mpeg">
     </audio>
 </section>
 
-<section>
-    <h3>Video Sermons</h3>
-    <p>Watch latest sermon:</p>
-    <!-- Replace the iframe src with your YouTube video link -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/examplevideo" frameborder="0" allowfullscreen></iframe>
+<section id="video">
+    <h2>Video Sermons</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/examplevideo1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/examplevideo2" frameborder="0" allowfullscreen></iframe>
 </section>
 
-<section>
-    <h3>Contact Me</h3>
+<section id="devotion">
+    <h2>Short Devotion</h2>
+    <p>“Trust in the Lord with all your heart, and He will guide your path.” – Proverbs 3:5-6</p>
+</section>
+
+<section id="thoughts">
+    <h2>Theological Thoughts</h2>
+    <p>Here I share reflections on Bible prophecy, righteousness, and practical Christian living.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
     <p>Email: your-email@example.com</p>
     <p>Phone: +255 7XXXXXXXX</p>
 </section>
 
 </body>
-      </html>
+    </html>
